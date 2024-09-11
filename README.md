@@ -80,6 +80,4 @@ $ docker run -d --network host --device /dev/i2c-1 temperature
 
 ## Instructions
 
-1. In your favourite browser, navigate to `10.10.10.1:8000` and monitor the temperature measured by your Raspberry Pi in a view like this:
-
-![](example.png)
+1. In your favourite browser, navigate to `10.10.10.1:8000` and monitor the temperature measured by your Raspberry Pi.
