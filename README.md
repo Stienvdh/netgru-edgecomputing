@@ -2,6 +2,8 @@
 
 In this module, you will use an IOx application to monitor environmental conditions on your factory floor. Specifically, you will learn how to (1) build an IOx application, (2) package and deploy it on a Cisco IR1101, and (3) access it remotely. This could for instance be interesting when the machines on your factory floor need to operate within strict environmental circumstances (e.g., temperature) which you want to monitor from anywhere, at any time.
 
+![](setup.png)
+
 ## Hardware requirements
 
 1. A Cisco IR1101 supporting IOx. (This code was tested using IOS-XE version 17.12.02)
