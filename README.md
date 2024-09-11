@@ -4,9 +4,6 @@ In this module, you will use an IOx application to monitor environmental conditi
 
 ## Hardware requirements
 
-> [!TIP]  
-> In case you don't have any hardware available - throughout the set-up steps, you will find out how to use the `dummy_scripts` folder instead of this equipment.
-
 1. A Cisco IR1101 supporting IOx. (This code was tested using IOS-XE version 17.12.02)
 
 3. Connected to a downlink on the IR1101: a Raspberry PI 4.
