@@ -1,0 +1,28 @@
+<meta http-equiv="refresh" content="3"> 
+    <br><br><br>   
+    <p><center><font size="300px">Current temperature: {{ current_temperature }}</font></center></p>
+    <div>
+        <canvas id="tempChart" width="400" height="400"></canvas>
+        <script src="{{ url_for('static', filename='/js/Chart.js') }}"></script>
+        <script>
+        function makeChart(tempData) {
+            new Chart(document.getElementById("tempChart"), {
+            type: 'line',
+            data: {
+                labels: tempData,
+                datasets: [{
+                    data: tempData,
+                    label: "Historic temperature",
+                    borderColor: "#3e95cd",
+                    fill: true
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                animation: false
+            }
+        });
+        }
+        makeChart({{ temp_data|tojson }})
+        </script>
+    </div>
